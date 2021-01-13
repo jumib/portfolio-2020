@@ -7,11 +7,9 @@ const Nav = () => {
   return (
         <>
         <ol>
-          <li><Link to='/react-github-pages'>Home</Link></li>
-          <li><Link to='/react-github-pages/aboutme'>aboutme</Link></li>
-          <li><Link to='/react-github-pages/aboutme'>skills</Link></li>
-          <li><Link to='/react-github-pages/aboutme'>project</Link></li>
-          <li><Link to='/react-github-pages/aboutme'>contact</Link></li>
+          <li><Link to='/react-github-pages'>aboutme</Link></li>
+          <li><Link to='/react-github-pages/project'>project</Link></li>
+          <li><Link to='/react-github-pages/contact'>contact</Link></li>
         </ol>
         </>
         );
