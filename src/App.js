@@ -38,10 +38,12 @@ import { Typography, Container, makeStyles } from '@material-ui/core';
 const useStyles = makeStyles(() => ({
   root: {
     width : 1000,
-    height : 3000,
+    height : 2000,
     margin : 'auto',
     textAlign : 'center',
-    padding : '10px'
+    padding : '10px',
+    marginBottom : '50px',
+    justifyContent : 'center'
   },
   main_box: {
     backgroundColor : '#cfe8fc',
@@ -68,7 +70,7 @@ function App() {
     <div className={classes.main_box}/>
     <Nav />
     <div>
-    <Paper elevation={3} className={classes.root}>
+    <Paper elevation={0} className={classes.root}>
     <Switch>
       <Route exact path="/react-github-pages" component={AboutMe} />
       <Route path="/react-github-pages/aboutme" component={AboutMe}></Route>
