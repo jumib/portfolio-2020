@@ -1,8 +1,5 @@
 import { makeStyles } from '@material-ui/core'
 import React from 'react'
-import front from '../assets/front.png'
-import back from '../assets/back.png'
-import database from '../assets/database.png'
 import stacks from '../assets/stacks.png'
 
 const useStyles = makeStyles(() => ({
@@ -44,9 +41,6 @@ const AboutMe = () => {
         <div>
             <h2>Stack </h2><br/>
             <div className={classes.stack}>
-                {/* <img src={front} alt='stack_front' height='120px'/><br/>
-                <img src={back} alt='stack_back' height='120px'/><br/>
-                <img src={database} alt='stack_database' height='120px'/><br/> */}
                 <img src={stacks} alt='stacks' height='400px'/>
             </div>
         </div><br/><br/><br/>
