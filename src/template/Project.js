@@ -5,19 +5,21 @@ import flistock from '../assets/flistock.png'
 import organic from '../assets/organic.png'
 import login from '../assets/flistock/login.png'
 import signup from '../assets/flistock/signup.png'
+import proj_first from '../component/proj_first'
 
 function rand() {
   return Math.round(Math.random() * 20) - 10;
 }
 
 function getModalStyle() {
-  const top = 50 + rand();
-  const left = 50 + rand();
+  const top = 50
+  const left = 50
 
   return {
     top: `${top}%`,
     left: `${left}%`,
-    transform: `translate(-${top}%, -${left}%)`,
+    transform: `translate(-${top}%, -${left}%)`
+
   };
 }
 
@@ -52,11 +54,12 @@ const useStyles = makeStyles(() => ({
     },
     paper: {
         position: 'absolute',
-        width : '600px',
-        height : '500px',
+        width : '1000px',
+        height : '600px',
         backgroundColor: 'white',
         border: '2px solid #000',
-        padding: '20px'
+        padding: '20px',
+        overflow: 'auto'
       },
 
 }))
@@ -99,9 +102,8 @@ const Project = () => {
                 <th>설명</th><br/>
                 <td> : 프론트엔드를 맡아 플라스크에서 보낸 데이터를 react를 통해 구현하였습니다. </td>
             </p>
-                <image src={login} alt='login' height='20px'/><br/>
-                <image src={signup} alt='signup' height='20px'/>
-            
+                <img src={login} alt='login' height='300px'/><br/>
+                <img src={signup} alt='signup' height='300px'/>
         </div>
         {/* <SimpleModal /> */}
       </div>
@@ -155,3 +157,30 @@ const Project = () => {
     )
 }
 export default Project
+
+// import React, { useState } from 'react'
+// import proj_first from '../component/proj_first'
+
+// const Project = () => {
+
+//     const { state, setState } = useState(false)
+
+//     // const state = { isModalOpen: false }
+
+//     const openModal = () => {
+//         setState(true)
+//     }
+
+//     // const closeModal = () => {
+//     //     this.setState({ isModalOpen : false })
+//     // }
+
+//     return (
+//         <>
+//         <button onClick={openModal}>Modal Open</button>
+//         {/* <proj_first isOpen={this.state.isModalOpen} close={this.closeModal} /> */}
+//         </>
+//     )
+// }
+
+// export default Project
