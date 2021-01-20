@@ -38,11 +38,10 @@ import { Typography, Container, makeStyles } from '@material-ui/core';
 const useStyles = makeStyles(() => ({
   root: {
     width : 1000,
-    height : 2000,
+    height : 1700,
     margin : 'auto',
     textAlign : 'center',
     padding : '10px',
-    marginBottom : '50px',
     justifyContent : 'center'
   },
   main_box: {

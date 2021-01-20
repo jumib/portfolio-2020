@@ -1,0 +1,25 @@
+.Nav {
+    height: 80px;
+    margin: auto;
+}
+
+.Nav ul li {
+    background-color: aqua;
+    float: left;
+    list-style: none;
+    line-height: 80px;
+    text-align: center;
+}
+
+.Nav a {
+    text-decoration: none;
+    width: 400px;
+    display: block;
+    color: black;
+    font-size: large;
+    font-weight: bold;
+}
+
+.Nav a:hover {
+    color: red;
+}
