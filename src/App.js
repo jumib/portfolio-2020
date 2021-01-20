@@ -36,28 +36,41 @@ import Contact from './template/Contact';
 import { Typography, Container, makeStyles } from '@material-ui/core';
 import keyboard from './assets/keyboard.jpeg'
 import topimg from './assets/topimg.jpeg'
+import Fade from 'react-reveal/Fade';
 
 const useStyles = makeStyles(() => ({
+  wrap: {
+    height: '100vh',
+    width: '100vw',
+  },
   paper: {
-    width : 1000,
-    height : 1700,
-    margin : 'auto',
-    textAlign : 'center',
-    padding : '40px 10px 0 10px',
-    justifyContent : 'center'
+    width: '100%',
+    height: '100%',
+    // margin : 'auto',
+    textAlign: 'center',
+    // padding : '40px 10px 0 10px',
+    // justifyContent: 'center',
+    // alignItems: 'center'
+    // verticalAlign : 'middle'
   },
   main_box: {
-    height : '520px',
-    textAlign : 'right',
-    padding : '60px 160px 0 0',
-    backgroundImage : `url(${topimg})`,
-    backgroundSize : "cover",
-    backgroundPosition : "center",
+    height: '90vh',
+    textAlign: 'right',
+    backgroundImage: `url(${topimg})`,
+    backgroundSize: "cover",
+    backgroundPosition: "center",
   },
   font: {
     fontWeight: '900',
-    fontSize: '3em',
-    transition: 'opacity 0.5s linea'
+    fontSize: '2.9em',
+    // transition: 'opacity 0.5s linea',
+    color: '#343333',
+    "&:hover": {
+      color: '#EEC342'
+    },
+    padding: '80px 180px 0 0',
+    margin: '0'
+
   }
 }))
 
@@ -67,28 +80,32 @@ function App() {
 
   return (
     <>
-    {/* <Header/> */}
-    {/* <Container maxWidth="lg">
+      {/* <Header/> */}
+      {/* <Container maxWidth="lg">
       <Typography component="div" style={{ backgroundColor: '#cfe8fc', height: '300px' }} />
     </Container> */}
-    <div className={classes.main_box}>
-      <p className={classes.font}>
-      Brand-new , <br/>
-      Cooperative , <br/>
-      Sincere ,
-      </p>
-    </div>
-    <Nav />
-    <div>
-    <Paper elevation={0} className={classes.paper}>
-    <Switch>
-      <Route exact path="/react-github-pages" component={AboutMe} />
-      <Route path="/react-github-pages/aboutme" component={AboutMe}></Route>
-      <Route path="/react-github-pages/project" component={Project}></Route>
-      <Route path="/react-github-pages/contact" component={Contact}></Route>
-    </Switch>
-    </Paper>
-    </div>
+      <div className={classes.wrap}>
+        <div className={classes.main_box}>
+          <Fade right>
+            <p className={classes.font}>
+              Brand-new , <br />
+              Cooperative , <br />
+              Sincere ,
+            </p>
+          </Fade>
+        </div>
+        <Nav />
+      </div>
+      <div>
+        <Paper elevation={0} className={classes.paper}>
+          <Switch>
+            <Route exact path="/react-github-pages" component={AboutMe} />
+            <Route path="/react-github-pages/aboutme" component={AboutMe}></Route>
+            <Route path="/react-github-pages/project" component={Project}></Route>
+            <Route path="/react-github-pages/contact" component={Contact}></Route>
+          </Switch>
+        </Paper>
+      </div>
     </>
   );
 }

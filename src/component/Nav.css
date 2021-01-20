@@ -1,13 +1,13 @@
 .Nav {
-    height: 80px;
-    margin: auto;
+    height: 50px;
+    background-color: #FFF;
 }
 
 .Nav ul li {
     background-color: #FFF;
     float: left;
     list-style: none;
-    line-height: 80px;
+    /* line-height: 80px; */
     text-align: center;
 }
 
