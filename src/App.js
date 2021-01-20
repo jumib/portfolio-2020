@@ -34,6 +34,8 @@ import Header from './component/Header/Header';
 import Project from './template/Project';
 import Contact from './template/Contact';
 import { Typography, Container, makeStyles } from '@material-ui/core';
+import keyboard from './assets/keyboard.jpeg'
+import topimg from './assets/topimg.jpeg'
 
 const useStyles = makeStyles(() => ({
   root: {
@@ -49,9 +51,9 @@ const useStyles = makeStyles(() => ({
     height : '500px',
     textAlign : 'center',
     padding : '50px',
-    backgroundImage : "url('https://images.unsplash.com/photo-1514428631868-a400b561ff44?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2850&q=80')",
+    backgroundImage : `url(${topimg})`,
     backgroundSize : "cover",
-    backgroundPosition : "center bottom"
+    backgroundPosition : "center"
   }
 }))
 

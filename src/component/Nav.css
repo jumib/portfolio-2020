@@ -4,7 +4,7 @@
 }
 
 .Nav ul li {
-    background-color: aqua;
+    background-color: #FFF;
     float: left;
     list-style: none;
     line-height: 80px;
@@ -13,7 +13,7 @@
 
 .Nav a {
     text-decoration: none;
-    width: 400px;
+    width: 450px;
     display: block;
     color: black;
     font-size: large;
