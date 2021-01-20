@@ -6,9 +6,17 @@ import Fade from 'react-reveal/Fade';
 
 
 const useStyles = makeStyles(() => ({
-    wrap: {
-        height: '100vh',
+    who_section: {
+        // height: '100vh',
         width: '100vw',
+    },
+    who: {
+        padding: '30px 0 0 0',
+        margin: '0 0 60px 0'
+    },
+    skills: {
+        padding: '60px 0 0 0',
+        margin: '0 0 60px 0'
     },
     main_img: {
         backgroundColor: 'red',
@@ -25,7 +33,12 @@ const useStyles = makeStyles(() => ({
     // },
     p: {
         textAlign: 'left'
-    }
+    },
+    title: {
+        color: 'rgb(221, 34, 9)',
+        fontSize: '2.7em',
+        fontWeight: '900'
+      }
 }))
 
 const AboutMe = () => {
@@ -35,9 +48,9 @@ const AboutMe = () => {
     return (
         <>
             {/* <Fade> */}
-                <div className={classes.wrap}>
-                    <br/><br/><br/><br/><br/><br/><br/><br/>
-                    <h2>Profile </h2><br />
+                <div className={classes.who_section} id="aboutme">
+                    <div className={classes.who}>
+                    <p className={classes.title}>About Me</p><br />
                     <Grid container >
                         <Grid item xs={12} sm={6}>
                             <div className={classes.main_img} />
@@ -61,11 +74,10 @@ const AboutMe = () => {
                             </div>
                         </Grid>
                     </Grid>
+                    </div>
                 </div>
-                <hr />
-                <div className={classes.wrap}>
-                <br/><br/><br/><br/><br/><br/><br/><br/>
-                    <h2>Stack </h2><br />
+                <div className={classes.skills}>
+                    <h2>Skills </h2><br />
                     <div>
                         <img src={stacks} alt='stacks' height='400px' />
                     </div>

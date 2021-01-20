@@ -46,22 +46,18 @@ function getModalStyle() {
 }
 
 const useStyles = makeStyles(() => ({
-  wrap: {
+  project_section: {
     height: '100vh',
     width: '100vw',
   },
   proj: {
     padding: '30px'
   },
-  first: {
-    backgroundColor: 'blue',
-    width: '400px',
-    height: '500px',
-  },
+  
   button_1: {
     backgroundColor: 'white',
-    width: '500px',
-    height: '500px',
+    width: '400px',
+    height: '400px',
     backgroundImage: `url(${flistock})`,
     backgroundSize: "contain",
     backgroundPosition: "center",
@@ -76,8 +72,8 @@ const useStyles = makeStyles(() => ({
   },
   button_2: {
     backgroundColor: 'white',
-    width: '500px',
-    height: '500px',
+    width: '400px',
+    height: '400px',
     backgroundImage: `url(${organic})`,
     backgroundSize: "contain",
     backgroundPosition: "center",
@@ -92,13 +88,18 @@ const useStyles = makeStyles(() => ({
   },
   paper: {
     position: 'absolute',
-    width: '1000px',
+    width: '1100px',
     height: '600px',
     backgroundColor: 'white',
     border: '2px solid #000',
-    padding: '20px',
+    padding: '40px',
     overflow: 'auto'
   },
+  title: {
+    color: 'rgb(221, 34, 9)',
+    fontSize: '2.7em',
+    fontWeight: '900'
+  }
 
 }))
 
@@ -231,13 +232,13 @@ const Project = () => {
 
   return (
     <>
-      <div className={classes.wrap}>
+      <div className={classes.project_section} id="portfolio">
         <div className={classes.proj}>
-          <h1>WHAT I DO</h1><br />
-          <p>카드를 클릭하여 프로젝트에 대한 자세한 설명을 보실 수 있습니다</p><br /><br />
+          <p className={classes.title}>Portfolio</p><br />
+          <p>카드를 클릭하여 프로젝트에 대한 자세한 설명을 보실 수 있습니다</p><br />
           {/* <div className={classes.first}/> */}
           <div>
-            <Grid container spacing={10}>
+            <Grid container>
               <Grid item xs={12} sm={6}>
                 <button className={classes.button_1} type="button" onClick={handleOpen1}>click me</button>
                 <Modal

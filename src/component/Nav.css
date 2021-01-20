@@ -1,13 +1,15 @@
 .Nav {
-    height: 50px;
+    height: 100%;
+    width: 100%;
     background-color: #FFF;
+    position: fixed;
 }
 
 .Nav ul li {
     background-color: #FFF;
     float: left;
     list-style: none;
-    /* line-height: 80px; */
+    line-height: 50px;
     text-align: center;
 }
 
@@ -15,7 +17,7 @@
     text-decoration: none;
     width: 450px;
     display: block;
-    color: #EEC342;
+    color: #F1D046;
     font-size: xx-large;
     font-weight: 900;
 }
@@ -23,3 +25,8 @@
 .Nav a:hover {
     color: rgb(221, 34, 9);
 }
+
+.Nav a:active {
+    color: rgb(221, 34, 9);
+}
+

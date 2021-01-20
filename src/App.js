@@ -62,13 +62,13 @@ const useStyles = makeStyles(() => ({
   },
   font: {
     fontWeight: '900',
-    fontSize: '2.9em',
+    fontSize: '3em',
     // transition: 'opacity 0.5s linea',
     color: '#343333',
     "&:hover": {
       color: '#EEC342'
     },
-    padding: '80px 180px 0 0',
+    padding: '130px 230px 0 0',
     margin: '0'
 
   }
@@ -98,12 +98,15 @@ function App() {
       </div>
       <div>
         <Paper elevation={0} className={classes.paper}>
-          <Switch>
+          <AboutMe/>
+          <Project/>
+          <Contact/>
+          {/* <Switch>
             <Route exact path="/react-github-pages" component={AboutMe} />
             <Route path="/react-github-pages/aboutme" component={AboutMe}></Route>
             <Route path="/react-github-pages/project" component={Project}></Route>
             <Route path="/react-github-pages/contact" component={Contact}></Route>
-          </Switch>
+          </Switch> */}
         </Paper>
       </div>
     </>
