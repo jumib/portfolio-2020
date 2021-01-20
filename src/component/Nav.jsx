@@ -11,9 +11,9 @@ const Nav = () => {
         <>
         <div className="Nav">
           <ul>
-            <li><Link to='/react-github-pages'>About me</Link></li>
-            <li><Link to='/react-github-pages/project'>Projects</Link></li>
-            <li><Link to='/react-github-pages/contact'>Reach me</Link></li>
+            <li><Link to='/react-github-pages'>About Me</Link></li>
+            <li><Link to='/react-github-pages/project'>Portfolio</Link></li>
+            <li><Link to='/react-github-pages/contact'>Contact</Link></li>
           </ul>
         </div>
         {/* <div className="Nav">

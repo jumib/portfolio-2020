@@ -1,11 +1,33 @@
-import { makeStyles } from '@material-ui/core'
+import { Grid, makeStyles } from '@material-ui/core'
 import React from 'react'
 import Modal from '@material-ui/core/Modal';
+
+// =========================== flistock =========================== 
 import flistock from '../assets/flistock.png'
-import organic from '../assets/organic.png'
 import login from '../assets/flistock/login.png'
 import signup from '../assets/flistock/signup.png'
-import proj_first from '../component/proj_first'
+import search from '../assets/flistock/search.png'
+import finance from '../assets/flistock/finance.png'
+import covid from '../assets/flistock/covid.png'
+import stock from '../assets/flistock/stock.png'
+import emotion from '../assets/flistock/emotion.png'
+import lstm from '../assets/flistock/lstm.png'
+import predict from '../assets/flistock/predict.png'
+import economic from '../assets/flistock/economic.png'
+
+// =========================== interior =========================== 
+import organic from '../assets/organic.png'
+import crawling from '../assets/interior/crawling.png'
+import drawer from '../assets/interior/drawer.png'
+import list from '../assets/interior/list.png'
+import login2 from '../assets/interior/login2.png'
+import modify from '../assets/interior/modify.png'
+import read from '../assets/interior/read.png'
+import register from '../assets/interior/register.png'
+import signup2 from '../assets/interior/signup2.png'
+
+
+
 
 function rand() {
   return Math.round(Math.random() * 20) - 10;
@@ -39,7 +61,11 @@ const useStyles = makeStyles(() => ({
         border: 'none',
         cursor: 'pointer',
         backgroundRepeat: 'no-repeat',
-        
+        "&:hover": {
+          border : '1px solid grey',
+          borderRadius: 10,
+          boxShadow: '0px 0px 10px 0px grey',
+        }
     },
     button_2: {
         backgroundColor: 'white',
@@ -51,6 +77,11 @@ const useStyles = makeStyles(() => ({
         border: 'none',
         cursor: 'pointer',
         backgroundRepeat: 'no-repeat',
+        "&:hover": {
+          border : '1px solid grey',
+          borderRadius: 10,
+          boxShadow: '0px 0px 10px 0px grey',
+        }
     },
     paper: {
         position: 'absolute',
@@ -102,8 +133,42 @@ const Project = () => {
                 <th>설명</th><br/>
                 <td> : 프론트엔드를 맡아 플라스크에서 보낸 데이터를 react를 통해 구현하였습니다. </td>
             </p>
-                <img src={login} alt='login' height='300px'/><br/>
-                <img src={signup} alt='signup' height='300px'/>
+            <div>
+              <Grid container spacing={1}>
+              <Grid item xs={12} sm={6}>
+                  <img src={flistock} alt='flistock' height='300px'/><br/>
+                </Grid>
+                <Grid item xs={12} sm={6}>
+                  <img src={search} alt='search' height='300px'/>
+                </Grid>
+                <Grid item xs={12} sm={6}>
+                  <img src={login} alt='login' height='300px'/><br/>
+                </Grid>
+                <Grid item xs={12} sm={6}>
+                  <img src={signup} alt='signup' height='300px'/>
+                </Grid>
+                <Grid item xs={12} sm={6}>
+                  <img src={finance} alt='login' height='300px'/><br/>
+                </Grid>
+                <Grid item xs={12} sm={6}>
+                  <img src={emotion} alt='signup' height='300px'/>
+                </Grid><Grid item xs={12} sm={6}>
+                  <img src={covid} alt='login' height='300px'/><br/>
+                </Grid>
+                <Grid item xs={12} sm={6}>
+                  <img src={stock} alt='signup' height='300px'/>
+                </Grid>
+                <Grid item xs={12} sm={6}>
+                  <img src={lstm} alt='login' height='300px'/><br/>
+                </Grid>
+                <Grid item xs={12} sm={6}>
+                  <img src={predict} alt='signup' height='300px' width='500px'/>
+                </Grid>
+                <Grid item xs={12} sm={6}>
+                  <img src={economic} alt='signup' height='300px' width='500px'/>
+                </Grid>
+              </Grid>
+            </div>
         </div>
         {/* <SimpleModal /> */}
       </div>
@@ -121,6 +186,37 @@ const Project = () => {
                 <th>소개</th><br/>
                 <td> : 게시판을 포함한 인테리어 커뮤니티 서비스입니다.</td>
             </p>
+            <div>
+              <Grid container spacing={1}>
+              <Grid item xs={12} sm={6}>
+                  <img src={organic} alt='flistock' height='300px'/><br/>
+                </Grid>
+                <Grid item xs={12} sm={6}>
+                  <img src={login2} alt='search' height='300px'/>
+                </Grid>
+                <Grid item xs={12} sm={6}>
+                  <img src={signup2} alt='login' height='300px'/><br/>
+                </Grid>
+                <Grid item xs={12} sm={6}>
+                  <img src={drawer} alt='signup' height='300px'/>
+                </Grid>
+                <Grid item xs={12} sm={6}>
+                  <img src={list} alt='login' height='300px'/><br/>
+                </Grid>
+                <Grid item xs={12} sm={6}>
+                  <img src={register} alt='signup' height='300px'/>
+                </Grid><Grid item xs={12} sm={6}>
+                  <img src={read} alt='login' height='300px'/><br/>
+                </Grid>
+                <Grid item xs={12} sm={6}>
+                  <img src={modify} alt='signup' height='300px'/>
+                </Grid>
+                <Grid item xs={12} sm={6}>
+                  <img src={crawling} alt='login' height='300px'/><br/>
+                </Grid>
+                
+              </Grid>
+            </div>
         </div>
         {/* <SimpleModal /> */}
     </div>
@@ -129,29 +225,33 @@ const Project = () => {
     return (
         <>
         <h1>WHAT I DO</h1><br/>
-        <p>카드를 클릭하여 프로젝트에 대한 자세한 설명을 보실 수 있습니다</p>
+        <p>카드를 클릭하여 프로젝트에 대한 자세한 설명을 보실 수 있습니다</p><br/><br/>
         {/* <div className={classes.first}/> */}
         <div>
-            <button className={classes.button_1} type="button" onClick={handleOpen1}>click me</button>
-            <Modal
-            open={open1}
-            onClose={handleClose1}
-            aria-labelledby="simple-modal-title"
-            aria-describedby="simple-modal-description"
-            >
-                {body1}
-            </Modal>
-        </div><br/><br/><br/>
-        <div>
-            <button className={classes.button_2} type="button" onClick={handleOpen2}>click me</button>
-            <Modal
-            open={open2}
-            onClose={handleClose2}
-            aria-labelledby="simple-modal-title"
-            aria-describedby="simple-modal-description"
-            >
-                {body2}
-            </Modal>
+          <Grid container spacing={10}>
+            <Grid item xs={12} sm={6}>
+                <button className={classes.button_1} type="button" onClick={handleOpen1}>click me</button>
+                <Modal
+                open={open1}
+                onClose={handleClose1}
+                aria-labelledby="simple-modal-title"
+                aria-describedby="simple-modal-description"
+                >
+                    {body1}
+                </Modal>
+            </Grid>
+            <Grid item xs={12} sm={6}>
+                <button className={classes.button_2} type="button" onClick={handleOpen2}>click me</button>
+                <Modal
+                open={open2}
+                onClose={handleClose2}
+                aria-labelledby="simple-modal-title"
+                aria-describedby="simple-modal-description"
+                >
+                    {body2}
+                </Modal>
+            </Grid>
+          </Grid>
         </div>
         </>
     )

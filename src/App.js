@@ -38,25 +38,28 @@ import keyboard from './assets/keyboard.jpeg'
 import topimg from './assets/topimg.jpeg'
 
 const useStyles = makeStyles(() => ({
-  root: {
+  paper: {
     width : 1000,
     height : 1700,
     margin : 'auto',
     textAlign : 'center',
-    padding : '10px',
+    padding : '40px 10px 0 10px',
     justifyContent : 'center'
   },
   main_box: {
-    backgroundColor : '#cfe8fc',
-    height : '500px',
-    textAlign : 'center',
-    padding : '50px',
+    height : '520px',
+    textAlign : 'right',
+    padding : '60px 160px 0 0',
     backgroundImage : `url(${topimg})`,
     backgroundSize : "cover",
-    backgroundPosition : "center"
+    backgroundPosition : "center",
+  },
+  font: {
+    fontWeight: '900',
+    fontSize: '3em',
+    transition: 'opacity 0.5s linea'
   }
 }))
-
 
 function App() {
 
@@ -68,10 +71,16 @@ function App() {
     {/* <Container maxWidth="lg">
       <Typography component="div" style={{ backgroundColor: '#cfe8fc', height: '300px' }} />
     </Container> */}
-    <div className={classes.main_box}/>
+    <div className={classes.main_box}>
+      <p className={classes.font}>
+      Brand-new , <br/>
+      Cooperative , <br/>
+      Sincere ,
+      </p>
+    </div>
     <Nav />
     <div>
-    <Paper elevation={0} className={classes.root}>
+    <Paper elevation={0} className={classes.paper}>
     <Switch>
       <Route exact path="/react-github-pages" component={AboutMe} />
       <Route path="/react-github-pages/aboutme" component={AboutMe}></Route>
