@@ -26,15 +26,15 @@
 
 import './App.css';
 import React from 'react'
-import { Route, Switch } from "react-router-dom";
+// import { Route, Switch } from "react-router-dom";
 import AboutMe from './template/AboutMe';
 import Nav from './component/Nav';
 import Paper from '@material-ui/core/Paper';
-import Header from './component/Header/Header';
+// import Header from './component/Header/Header';
 import Project from './template/Project';
 import Contact from './template/Contact';
-import { Typography, Container, makeStyles } from '@material-ui/core';
-import keyboard from './assets/keyboard.jpeg'
+import { makeStyles } from '@material-ui/core';
+// import keyboard from './assets/keyboard.jpeg'
 import topimg from './assets/topimg.jpeg'
 import Fade from 'react-reveal/Fade';
 
