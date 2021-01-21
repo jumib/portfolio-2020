@@ -2,7 +2,7 @@ import { makeStyles } from '@material-ui/core'
 import React from 'react'
 import stacks from '../assets/stacks.png'
 import { Grid } from '@material-ui/core'
-import Fade from 'react-reveal/Fade';
+// import Fade from 'react-reveal/Fade';
 
 
 const useStyles = makeStyles(() => ({

@@ -29,9 +29,9 @@ import signup2 from '../assets/interior/signup2.png'
 
 
 
-function rand() {
-  return Math.round(Math.random() * 20) - 10;
-}
+// function rand() {
+//   return Math.round(Math.random() * 20) - 10;
+// }
 
 function getModalStyle() {
   const top = 50
