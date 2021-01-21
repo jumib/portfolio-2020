@@ -36,7 +36,7 @@ import Contact from './template/Contact';
 import { makeStyles } from '@material-ui/core';
 // import keyboard from './assets/keyboard.jpeg'
 import topimg from './assets/topimg.jpeg'
-import Fade from 'react-reveal/Fade';
+// import Fade from 'react-reveal/Fade';
 
 const useStyles = makeStyles(() => ({
   wrap: {
@@ -86,13 +86,13 @@ function App() {
     </Container> */}
       <div className={classes.wrap}>
         <div className={classes.main_box}>
-          <Fade right>
+          {/* <Fade right> */}
             <p className={classes.font}>
               Brand-new , <br />
               Cooperative , <br />
               Sincere ,
             </p>
-          </Fade>
+          {/* </Fade> */}
         </div>
         <Nav />
       </div>
