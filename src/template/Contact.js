@@ -36,9 +36,16 @@ const Contact = () => {
                 <div className={classes.contact}>
                     <div className={classes.innerbox}>
                     <p className={classes.title}>Contact</p>
+                    <div className="contact_text">
+                        <p><br />
+                                ✉️ baekjumi@naver.com<br />
+                                📞 010 6358 3832
+                            </p>
+                    </div>
                     </div>
                 </div>
             </div>
+
         </>
     )
 }
